@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-27 22:19:53",
+  "exportedAt": "2026-05-27 22:38:25",
   "databasePath": "C:\\Users\\LARISA\\Desktop\\UniApp\\bin\\Debug\\net10.0\\tracker.db",
   "users": [
     {
@@ -51,6 +51,11 @@
       "id": 4,
       "userId": 2,
       "loggedInAt": "2026-05-27 22:19:15"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "loggedInAt": "2026-05-27 22:38:25"
     }
   ],
   "foodLogs": [
