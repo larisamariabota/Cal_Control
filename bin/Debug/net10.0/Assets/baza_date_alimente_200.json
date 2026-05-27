@@ -1,0 +1,3561 @@
+{
+  "metadata": {
+    "title": "Bază de date alimente de bază",
+    "count": 200,
+    "language": "ro",
+    "nutrition_basis": "per 100g",
+    "note": "Valorile sunt orientative, potrivite pentru aplicații de tracking nutrițional. Pentru uz medical sau etichetare comercială, verifică surse oficiale/laborator."
+  },
+  "foods": [
+    {
+      "id": 1,
+      "name": "Cartof",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 77,
+        "protein_g": 2,
+        "carbohydrates_g": 17,
+        "fat_g": 0.1,
+        "fiber_g": 2.2,
+        "sugars_g": 0.8,
+        "sodium_mg": 6
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Cartof dulce",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 86,
+        "protein_g": 1.6,
+        "carbohydrates_g": 20.1,
+        "fat_g": 0.1,
+        "fiber_g": 3,
+        "sugars_g": 4.2,
+        "sodium_mg": 55
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Morcov",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 41,
+        "protein_g": 0.9,
+        "carbohydrates_g": 9.6,
+        "fat_g": 0.2,
+        "fiber_g": 2.8,
+        "sugars_g": 4.7,
+        "sodium_mg": 69
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ceapă",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 40,
+        "protein_g": 1.1,
+        "carbohydrates_g": 9.3,
+        "fat_g": 0.1,
+        "fiber_g": 1.7,
+        "sugars_g": 4.2,
+        "sodium_mg": 4
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Usturoi",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 149,
+        "protein_g": 6.4,
+        "carbohydrates_g": 33.1,
+        "fat_g": 0.5,
+        "fiber_g": 2.1,
+        "sugars_g": 1,
+        "sodium_mg": 17
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Roșie",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 18,
+        "protein_g": 0.9,
+        "carbohydrates_g": 3.9,
+        "fat_g": 0.2,
+        "fiber_g": 1.2,
+        "sugars_g": 2.6,
+        "sodium_mg": 5
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Castravete",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 15,
+        "protein_g": 0.7,
+        "carbohydrates_g": 3.6,
+        "fat_g": 0.1,
+        "fiber_g": 0.5,
+        "sugars_g": 1.7,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Ardei gras",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 31,
+        "protein_g": 1,
+        "carbohydrates_g": 6,
+        "fat_g": 0.3,
+        "fiber_g": 2.1,
+        "sugars_g": 4.2,
+        "sodium_mg": 4
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Broccoli",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 34,
+        "protein_g": 2.8,
+        "carbohydrates_g": 6.6,
+        "fat_g": 0.4,
+        "fiber_g": 2.6,
+        "sugars_g": 1.7,
+        "sodium_mg": 33
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Conopidă",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 25,
+        "protein_g": 1.9,
+        "carbohydrates_g": 5,
+        "fat_g": 0.3,
+        "fiber_g": 2,
+        "sugars_g": 1.9,
+        "sodium_mg": 30
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Varză albă",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 25,
+        "protein_g": 1.3,
+        "carbohydrates_g": 5.8,
+        "fat_g": 0.1,
+        "fiber_g": 2.5,
+        "sugars_g": 3.2,
+        "sodium_mg": 18
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Varză roșie",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 31,
+        "protein_g": 1.4,
+        "carbohydrates_g": 7.4,
+        "fat_g": 0.2,
+        "fiber_g": 2.1,
+        "sugars_g": 3.8,
+        "sodium_mg": 27
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Spanac",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 23,
+        "protein_g": 2.9,
+        "carbohydrates_g": 3.6,
+        "fat_g": 0.4,
+        "fiber_g": 2.2,
+        "sugars_g": 0.4,
+        "sodium_mg": 79
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Salată verde",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 15,
+        "protein_g": 1.4,
+        "carbohydrates_g": 2.9,
+        "fat_g": 0.2,
+        "fiber_g": 1.3,
+        "sugars_g": 0.8,
+        "sodium_mg": 28
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Dovlecel",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 17,
+        "protein_g": 1.2,
+        "carbohydrates_g": 3.1,
+        "fat_g": 0.3,
+        "fiber_g": 1,
+        "sugars_g": 2.5,
+        "sodium_mg": 8
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Vinete",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 25,
+        "protein_g": 1,
+        "carbohydrates_g": 5.9,
+        "fat_g": 0.2,
+        "fiber_g": 3,
+        "sugars_g": 3.5,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Ciuperci champignon",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 22,
+        "protein_g": 3.1,
+        "carbohydrates_g": 3.3,
+        "fat_g": 0.3,
+        "fiber_g": 1,
+        "sugars_g": 2,
+        "sodium_mg": 5
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Sfeclă roșie",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 43,
+        "protein_g": 1.6,
+        "carbohydrates_g": 9.6,
+        "fat_g": 0.2,
+        "fiber_g": 2.8,
+        "sugars_g": 6.8,
+        "sodium_mg": 78
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Țelină apio",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 16,
+        "protein_g": 0.7,
+        "carbohydrates_g": 3,
+        "fat_g": 0.2,
+        "fiber_g": 1.6,
+        "sugars_g": 1.3,
+        "sodium_mg": 80
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Ridichi",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 16,
+        "protein_g": 0.7,
+        "carbohydrates_g": 3.4,
+        "fat_g": 0.1,
+        "fiber_g": 1.6,
+        "sugars_g": 1.9,
+        "sodium_mg": 39
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Praz",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 61,
+        "protein_g": 1.5,
+        "carbohydrates_g": 14.2,
+        "fat_g": 0.3,
+        "fiber_g": 1.8,
+        "sugars_g": 3.9,
+        "sodium_mg": 20
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Mazare verde",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 81,
+        "protein_g": 5.4,
+        "carbohydrates_g": 14.5,
+        "fat_g": 0.4,
+        "fiber_g": 5.1,
+        "sugars_g": 5.7,
+        "sodium_mg": 5
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Porumb dulce",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 86,
+        "protein_g": 3.2,
+        "carbohydrates_g": 19,
+        "fat_g": 1.2,
+        "fiber_g": 2.7,
+        "sugars_g": 3.2,
+        "sodium_mg": 15
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Fasole verde",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 31,
+        "protein_g": 1.8,
+        "carbohydrates_g": 7,
+        "fat_g": 0.1,
+        "fiber_g": 3.4,
+        "sugars_g": 3.3,
+        "sodium_mg": 6
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Sparanghel",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 20,
+        "protein_g": 2.2,
+        "carbohydrates_g": 3.9,
+        "fat_g": 0.1,
+        "fiber_g": 2.1,
+        "sugars_g": 1.9,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Anghinare",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 47,
+        "protein_g": 3.3,
+        "carbohydrates_g": 10.5,
+        "fat_g": 0.2,
+        "fiber_g": 5.4,
+        "sugars_g": 1,
+        "sodium_mg": 94
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Fenicul",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 31,
+        "protein_g": 1.2,
+        "carbohydrates_g": 7.3,
+        "fat_g": 0.2,
+        "fiber_g": 3.1,
+        "sugars_g": 3.9,
+        "sodium_mg": 52
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Gulie",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 27,
+        "protein_g": 1.7,
+        "carbohydrates_g": 6.2,
+        "fat_g": 0.1,
+        "fiber_g": 3.6,
+        "sugars_g": 2.6,
+        "sodium_mg": 20
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Dovleac",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 26,
+        "protein_g": 1,
+        "carbohydrates_g": 6.5,
+        "fat_g": 0.1,
+        "fiber_g": 0.5,
+        "sugars_g": 2.8,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Rucola",
+      "category": "legume",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 25,
+        "protein_g": 2.6,
+        "carbohydrates_g": 3.7,
+        "fat_g": 0.7,
+        "fiber_g": 1.6,
+        "sugars_g": 2.1,
+        "sodium_mg": 27
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Măr",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 52,
+        "protein_g": 0.3,
+        "carbohydrates_g": 13.8,
+        "fat_g": 0.2,
+        "fiber_g": 2.4,
+        "sugars_g": 10.4,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Pară",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 57,
+        "protein_g": 0.4,
+        "carbohydrates_g": 15.2,
+        "fat_g": 0.1,
+        "fiber_g": 3.1,
+        "sugars_g": 9.8,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Banană",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 89,
+        "protein_g": 1.1,
+        "carbohydrates_g": 22.8,
+        "fat_g": 0.3,
+        "fiber_g": 2.6,
+        "sugars_g": 12.2,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Portocală",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 47,
+        "protein_g": 0.9,
+        "carbohydrates_g": 11.8,
+        "fat_g": 0.1,
+        "fiber_g": 2.4,
+        "sugars_g": 9.4,
+        "sodium_mg": 0
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Mandarină",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 53,
+        "protein_g": 0.8,
+        "carbohydrates_g": 13.3,
+        "fat_g": 0.3,
+        "fiber_g": 1.8,
+        "sugars_g": 10.6,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Lămâie",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 29,
+        "protein_g": 1.1,
+        "carbohydrates_g": 9.3,
+        "fat_g": 0.3,
+        "fiber_g": 2.8,
+        "sugars_g": 2.5,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Grepfrut",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 42,
+        "protein_g": 0.8,
+        "carbohydrates_g": 10.7,
+        "fat_g": 0.1,
+        "fiber_g": 1.6,
+        "sugars_g": 6.9,
+        "sodium_mg": 0
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Struguri",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 69,
+        "protein_g": 0.7,
+        "carbohydrates_g": 18.1,
+        "fat_g": 0.2,
+        "fiber_g": 0.9,
+        "sugars_g": 15.5,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Căpșuni",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 32,
+        "protein_g": 0.7,
+        "carbohydrates_g": 7.7,
+        "fat_g": 0.3,
+        "fiber_g": 2,
+        "sugars_g": 4.9,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Afine",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 57,
+        "protein_g": 0.7,
+        "carbohydrates_g": 14.5,
+        "fat_g": 0.3,
+        "fiber_g": 2.4,
+        "sugars_g": 10,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Zmeură",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 52,
+        "protein_g": 1.2,
+        "carbohydrates_g": 11.9,
+        "fat_g": 0.7,
+        "fiber_g": 6.5,
+        "sugars_g": 4.4,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Mure",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 43,
+        "protein_g": 1.4,
+        "carbohydrates_g": 10.2,
+        "fat_g": 0.5,
+        "fiber_g": 5.3,
+        "sugars_g": 4.9,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Cireșe",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 63,
+        "protein_g": 1.1,
+        "carbohydrates_g": 16,
+        "fat_g": 0.2,
+        "fiber_g": 2.1,
+        "sugars_g": 12.8,
+        "sodium_mg": 0
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Vișine",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 50,
+        "protein_g": 1,
+        "carbohydrates_g": 12.2,
+        "fat_g": 0.3,
+        "fiber_g": 1.6,
+        "sugars_g": 8.5,
+        "sodium_mg": 3
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Piersică",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 39,
+        "protein_g": 0.9,
+        "carbohydrates_g": 9.5,
+        "fat_g": 0.3,
+        "fiber_g": 1.5,
+        "sugars_g": 8.4,
+        "sodium_mg": 0
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Nectarină",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 44,
+        "protein_g": 1.1,
+        "carbohydrates_g": 10.6,
+        "fat_g": 0.3,
+        "fiber_g": 1.7,
+        "sugars_g": 7.9,
+        "sodium_mg": 0
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Caisă",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 48,
+        "protein_g": 1.4,
+        "carbohydrates_g": 11.1,
+        "fat_g": 0.4,
+        "fiber_g": 2,
+        "sugars_g": 9.2,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Prună",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 46,
+        "protein_g": 0.7,
+        "carbohydrates_g": 11.4,
+        "fat_g": 0.3,
+        "fiber_g": 1.4,
+        "sugars_g": 9.9,
+        "sodium_mg": 0
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Pepene roșu",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 30,
+        "protein_g": 0.6,
+        "carbohydrates_g": 7.6,
+        "fat_g": 0.2,
+        "fiber_g": 0.4,
+        "sugars_g": 6.2,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Pepene galben",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 34,
+        "protein_g": 0.8,
+        "carbohydrates_g": 8.2,
+        "fat_g": 0.2,
+        "fiber_g": 0.9,
+        "sugars_g": 7.9,
+        "sodium_mg": 16
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Ananas",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 50,
+        "protein_g": 0.5,
+        "carbohydrates_g": 13.1,
+        "fat_g": 0.1,
+        "fiber_g": 1.4,
+        "sugars_g": 9.9,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Mango",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 60,
+        "protein_g": 0.8,
+        "carbohydrates_g": 15,
+        "fat_g": 0.4,
+        "fiber_g": 1.6,
+        "sugars_g": 13.7,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Kiwi",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 61,
+        "protein_g": 1.1,
+        "carbohydrates_g": 14.7,
+        "fat_g": 0.5,
+        "fiber_g": 3,
+        "sugars_g": 9,
+        "sodium_mg": 3
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Avocado",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 160,
+        "protein_g": 2,
+        "carbohydrates_g": 8.5,
+        "fat_g": 14.7,
+        "fiber_g": 6.7,
+        "sugars_g": 0.7,
+        "sodium_mg": 7
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Rodie",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 83,
+        "protein_g": 1.7,
+        "carbohydrates_g": 18.7,
+        "fat_g": 1.2,
+        "fiber_g": 4,
+        "sugars_g": 13.7,
+        "sodium_mg": 3
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Smochine proaspete",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 74,
+        "protein_g": 0.8,
+        "carbohydrates_g": 19.2,
+        "fat_g": 0.3,
+        "fiber_g": 2.9,
+        "sugars_g": 16.3,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Curmale",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 282,
+        "protein_g": 2.5,
+        "carbohydrates_g": 75,
+        "fat_g": 0.4,
+        "fiber_g": 8,
+        "sugars_g": 63,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Stafide",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 299,
+        "protein_g": 3.1,
+        "carbohydrates_g": 79,
+        "fat_g": 0.5,
+        "fiber_g": 3.7,
+        "sugars_g": 59,
+        "sodium_mg": 11
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Merișoare",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 46,
+        "protein_g": 0.4,
+        "carbohydrates_g": 12.2,
+        "fat_g": 0.1,
+        "fiber_g": 4.6,
+        "sugars_g": 4,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Papaya",
+      "category": "fructe",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 43,
+        "protein_g": 0.5,
+        "carbohydrates_g": 10.8,
+        "fat_g": 0.3,
+        "fiber_g": 1.7,
+        "sugars_g": 7.8,
+        "sodium_mg": 8
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Orez alb fiert",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 130,
+        "protein_g": 2.7,
+        "carbohydrates_g": 28.2,
+        "fat_g": 0.3,
+        "fiber_g": 0.4,
+        "sugars_g": 0.1,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Orez brun fiert",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 123,
+        "protein_g": 2.7,
+        "carbohydrates_g": 25.6,
+        "fat_g": 1,
+        "fiber_g": 1.8,
+        "sugars_g": 0.2,
+        "sodium_mg": 4
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Paste fierte",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 158,
+        "protein_g": 5.8,
+        "carbohydrates_g": 30.9,
+        "fat_g": 0.9,
+        "fiber_g": 1.8,
+        "sugars_g": 0.6,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Paste integrale fierte",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 124,
+        "protein_g": 5.3,
+        "carbohydrates_g": 26,
+        "fat_g": 0.5,
+        "fiber_g": 3.9,
+        "sugars_g": 0.8,
+        "sodium_mg": 3
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Pâine albă",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 265,
+        "protein_g": 9,
+        "carbohydrates_g": 49,
+        "fat_g": 3.2,
+        "fiber_g": 2.7,
+        "sugars_g": 5,
+        "sodium_mg": 491
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Pâine integrală",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 247,
+        "protein_g": 13,
+        "carbohydrates_g": 41,
+        "fat_g": 4.2,
+        "fiber_g": 7,
+        "sugars_g": 6,
+        "sodium_mg": 400
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Pâine de secară",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 259,
+        "protein_g": 8.5,
+        "carbohydrates_g": 48,
+        "fat_g": 3.3,
+        "fiber_g": 5.8,
+        "sugars_g": 3.9,
+        "sodium_mg": 603
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Lipie",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 275,
+        "protein_g": 9,
+        "carbohydrates_g": 56,
+        "fat_g": 1.2,
+        "fiber_g": 2.2,
+        "sugars_g": 1.6,
+        "sodium_mg": 536
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Ovăz fulgi",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 389,
+        "protein_g": 16.9,
+        "carbohydrates_g": 66.3,
+        "fat_g": 6.9,
+        "fiber_g": 10.6,
+        "sugars_g": 0.9,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Müsli",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 340,
+        "protein_g": 10,
+        "carbohydrates_g": 65,
+        "fat_g": 5,
+        "fiber_g": 8,
+        "sugars_g": 15,
+        "sodium_mg": 120
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Hrișcă fiartă",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 92,
+        "protein_g": 3.4,
+        "carbohydrates_g": 19.9,
+        "fat_g": 0.6,
+        "fiber_g": 2.7,
+        "sugars_g": 0.9,
+        "sodium_mg": 4
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Quinoa fiartă",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 120,
+        "protein_g": 4.4,
+        "carbohydrates_g": 21.3,
+        "fat_g": 1.9,
+        "fiber_g": 2.8,
+        "sugars_g": 0.9,
+        "sodium_mg": 7
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Cuscus fiert",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 112,
+        "protein_g": 3.8,
+        "carbohydrates_g": 23.2,
+        "fat_g": 0.2,
+        "fiber_g": 1.4,
+        "sugars_g": 0.1,
+        "sodium_mg": 5
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Bulgur fiert",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 83,
+        "protein_g": 3.1,
+        "carbohydrates_g": 18.6,
+        "fat_g": 0.2,
+        "fiber_g": 4.5,
+        "sugars_g": 0.1,
+        "sodium_mg": 5
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Mămăligă",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 70,
+        "protein_g": 1.6,
+        "carbohydrates_g": 15,
+        "fat_g": 0.4,
+        "fiber_g": 1.2,
+        "sugars_g": 0.2,
+        "sodium_mg": 10
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Făină albă",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 364,
+        "protein_g": 10.3,
+        "carbohydrates_g": 76.3,
+        "fat_g": 1,
+        "fiber_g": 2.7,
+        "sugars_g": 0.3,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Făină integrală",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 340,
+        "protein_g": 13.2,
+        "carbohydrates_g": 72,
+        "fat_g": 2.5,
+        "fiber_g": 10.7,
+        "sugars_g": 0.4,
+        "sodium_mg": 5
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Griș",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 360,
+        "protein_g": 12.7,
+        "carbohydrates_g": 73,
+        "fat_g": 1.1,
+        "fiber_g": 3.9,
+        "sugars_g": 0.4,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Corn flakes",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 357,
+        "protein_g": 7.5,
+        "carbohydrates_g": 84,
+        "fat_g": 0.4,
+        "fiber_g": 3.3,
+        "sugars_g": 8,
+        "sodium_mg": 729
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Tortilla porumb",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 218,
+        "protein_g": 5.7,
+        "carbohydrates_g": 44.6,
+        "fat_g": 2.9,
+        "fiber_g": 6.3,
+        "sugars_g": 1.2,
+        "sodium_mg": 45
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Linte fiartă",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 116,
+        "protein_g": 9,
+        "carbohydrates_g": 20.1,
+        "fat_g": 0.4,
+        "fiber_g": 7.9,
+        "sugars_g": 1.8,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Năut fiert",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 164,
+        "protein_g": 8.9,
+        "carbohydrates_g": 27.4,
+        "fat_g": 2.6,
+        "fiber_g": 7.6,
+        "sugars_g": 4.8,
+        "sodium_mg": 7
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Fasole albă fiartă",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 139,
+        "protein_g": 9.7,
+        "carbohydrates_g": 25.1,
+        "fat_g": 0.4,
+        "fiber_g": 6.3,
+        "sugars_g": 0.3,
+        "sodium_mg": 5
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Fasole roșie fiartă",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 127,
+        "protein_g": 8.7,
+        "carbohydrates_g": 22.8,
+        "fat_g": 0.5,
+        "fiber_g": 6.4,
+        "sugars_g": 0.3,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "Fasole neagră fiartă",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 132,
+        "protein_g": 8.9,
+        "carbohydrates_g": 23.7,
+        "fat_g": 0.5,
+        "fiber_g": 8.7,
+        "sugars_g": 0.3,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Soia boabe fiartă",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 172,
+        "protein_g": 16.6,
+        "carbohydrates_g": 9.9,
+        "fat_g": 9,
+        "fiber_g": 6,
+        "sugars_g": 3,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Tofu ferm",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 144,
+        "protein_g": 15.7,
+        "carbohydrates_g": 3.9,
+        "fat_g": 8.7,
+        "fiber_g": 2.3,
+        "sugars_g": 0.6,
+        "sodium_mg": 14
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Tempeh",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 193,
+        "protein_g": 20.3,
+        "carbohydrates_g": 7.6,
+        "fat_g": 10.8,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 9
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Edamame",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 121,
+        "protein_g": 11.9,
+        "carbohydrates_g": 8.9,
+        "fat_g": 5.2,
+        "fiber_g": 5.2,
+        "sugars_g": 2.2,
+        "sodium_mg": 6
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Humus",
+      "category": "leguminoase",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 166,
+        "protein_g": 7.9,
+        "carbohydrates_g": 14.3,
+        "fat_g": 9.6,
+        "fiber_g": 6,
+        "sugars_g": 0.3,
+        "sodium_mg": 379
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Lapte 1.5%",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 47,
+        "protein_g": 3.4,
+        "carbohydrates_g": 4.9,
+        "fat_g": 1.5,
+        "fiber_g": 0,
+        "sugars_g": 5,
+        "sodium_mg": 44
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Lapte 3.5%",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 64,
+        "protein_g": 3.3,
+        "carbohydrates_g": 4.8,
+        "fat_g": 3.5,
+        "fiber_g": 0,
+        "sugars_g": 5,
+        "sodium_mg": 43
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Iaurt simplu 2%",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 61,
+        "protein_g": 4.3,
+        "carbohydrates_g": 4.7,
+        "fat_g": 3,
+        "fiber_g": 0,
+        "sugars_g": 4.7,
+        "sodium_mg": 46
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Iaurt grecesc 2%",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 73,
+        "protein_g": 9.9,
+        "carbohydrates_g": 3.9,
+        "fat_g": 2,
+        "fiber_g": 0,
+        "sugars_g": 3.6,
+        "sodium_mg": 36
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Kefir",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 41,
+        "protein_g": 3.8,
+        "carbohydrates_g": 4.5,
+        "fat_g": 1,
+        "fiber_g": 0,
+        "sugars_g": 4.5,
+        "sodium_mg": 40
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Smântână 20%",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 206,
+        "protein_g": 2.8,
+        "carbohydrates_g": 3.4,
+        "fat_g": 20,
+        "fiber_g": 0,
+        "sugars_g": 3.4,
+        "sodium_mg": 70
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Brânză cottage",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 98,
+        "protein_g": 11.1,
+        "carbohydrates_g": 3.4,
+        "fat_g": 4.3,
+        "fiber_g": 0,
+        "sugars_g": 2.7,
+        "sodium_mg": 364
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Telemea",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 264,
+        "protein_g": 14.2,
+        "carbohydrates_g": 2,
+        "fat_g": 21,
+        "fiber_g": 0,
+        "sugars_g": 1,
+        "sodium_mg": 1200
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Cașcaval",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 356,
+        "protein_g": 25,
+        "carbohydrates_g": 2.2,
+        "fat_g": 27,
+        "fiber_g": 0,
+        "sugars_g": 0.5,
+        "sodium_mg": 700
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Mozzarella",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 280,
+        "protein_g": 28,
+        "carbohydrates_g": 3.1,
+        "fat_g": 17,
+        "fiber_g": 0,
+        "sugars_g": 1,
+        "sodium_mg": 627
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 101,
+      "name": "Parmezan",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 431,
+        "protein_g": 38,
+        "carbohydrates_g": 4.1,
+        "fat_g": 29,
+        "fiber_g": 0,
+        "sugars_g": 0.9,
+        "sodium_mg": 1529
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Brie",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 334,
+        "protein_g": 20.8,
+        "carbohydrates_g": 0.5,
+        "fat_g": 27.7,
+        "fiber_g": 0,
+        "sugars_g": 0.5,
+        "sodium_mg": 629
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Unt",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 717,
+        "protein_g": 0.9,
+        "carbohydrates_g": 0.1,
+        "fat_g": 81,
+        "fiber_g": 0,
+        "sugars_g": 0.1,
+        "sodium_mg": 11
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Ou întreg",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 143,
+        "protein_g": 12.6,
+        "carbohydrates_g": 0.7,
+        "fat_g": 9.5,
+        "fiber_g": 0,
+        "sugars_g": 0.4,
+        "sodium_mg": 142
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 105,
+      "name": "Albuș de ou",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 52,
+        "protein_g": 10.9,
+        "carbohydrates_g": 0.7,
+        "fat_g": 0.2,
+        "fiber_g": 0,
+        "sugars_g": 0.7,
+        "sodium_mg": 166
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 106,
+      "name": "Gălbenuș de ou",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 322,
+        "protein_g": 15.9,
+        "carbohydrates_g": 3.6,
+        "fat_g": 26.5,
+        "fiber_g": 0,
+        "sugars_g": 0.6,
+        "sodium_mg": 48
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Lapte de capră",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 69,
+        "protein_g": 3.6,
+        "carbohydrates_g": 4.5,
+        "fat_g": 4.1,
+        "fiber_g": 0,
+        "sugars_g": 4.5,
+        "sodium_mg": 50
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Ricotta",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 174,
+        "protein_g": 11.3,
+        "carbohydrates_g": 3,
+        "fat_g": 13,
+        "fiber_g": 0,
+        "sugars_g": 0.3,
+        "sodium_mg": 84
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 109,
+      "name": "Feta",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 264,
+        "protein_g": 14.2,
+        "carbohydrates_g": 4.1,
+        "fat_g": 21.3,
+        "fiber_g": 0,
+        "sugars_g": 4.1,
+        "sodium_mg": 1116
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Cheddar",
+      "category": "lactate_si_oua",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 403,
+        "protein_g": 24.9,
+        "carbohydrates_g": 1.3,
+        "fat_g": 33.1,
+        "fiber_g": 0,
+        "sugars_g": 0.5,
+        "sodium_mg": 621
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "Piept de pui gătit",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 165,
+        "protein_g": 31,
+        "carbohydrates_g": 0,
+        "fat_g": 3.6,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 74
+      },
+      "tags": []
+    },
+    {
+      "id": 112,
+      "name": "Pulpă de pui gătită",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 209,
+        "protein_g": 26,
+        "carbohydrates_g": 0,
+        "fat_g": 10.9,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 90
+      },
+      "tags": []
+    },
+    {
+      "id": 113,
+      "name": "Curcan piept gătit",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 135,
+        "protein_g": 29,
+        "carbohydrates_g": 0,
+        "fat_g": 1.6,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 55
+      },
+      "tags": []
+    },
+    {
+      "id": 114,
+      "name": "Vită slabă gătită",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 250,
+        "protein_g": 26,
+        "carbohydrates_g": 0,
+        "fat_g": 15,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 72
+      },
+      "tags": []
+    },
+    {
+      "id": 115,
+      "name": "Porc cotlet gătit",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 242,
+        "protein_g": 27,
+        "carbohydrates_g": 0,
+        "fat_g": 14,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 62
+      },
+      "tags": []
+    },
+    {
+      "id": 116,
+      "name": "Miel gătit",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 294,
+        "protein_g": 25,
+        "carbohydrates_g": 0,
+        "fat_g": 21,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 72
+      },
+      "tags": []
+    },
+    {
+      "id": 117,
+      "name": "Ficat de pui",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 167,
+        "protein_g": 24,
+        "carbohydrates_g": 0.9,
+        "fat_g": 6.5,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 76
+      },
+      "tags": []
+    },
+    {
+      "id": 118,
+      "name": "Șuncă presată",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 145,
+        "protein_g": 21,
+        "carbohydrates_g": 1.5,
+        "fat_g": 6,
+        "fiber_g": 0,
+        "sugars_g": 1,
+        "sodium_mg": 1200
+      },
+      "tags": []
+    },
+    {
+      "id": 119,
+      "name": "Bacon",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 541,
+        "protein_g": 37,
+        "carbohydrates_g": 1.4,
+        "fat_g": 42,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 1717
+      },
+      "tags": []
+    },
+    {
+      "id": 120,
+      "name": "Cârnați",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 301,
+        "protein_g": 12,
+        "carbohydrates_g": 2,
+        "fat_g": 27,
+        "fiber_g": 0,
+        "sugars_g": 1,
+        "sodium_mg": 900
+      },
+      "tags": []
+    },
+    {
+      "id": 121,
+      "name": "Somon",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 208,
+        "protein_g": 20,
+        "carbohydrates_g": 0,
+        "fat_g": 13,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 59
+      },
+      "tags": []
+    },
+    {
+      "id": 122,
+      "name": "Ton conservă în apă",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 116,
+        "protein_g": 26,
+        "carbohydrates_g": 0,
+        "fat_g": 1,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 338
+      },
+      "tags": []
+    },
+    {
+      "id": 123,
+      "name": "Cod",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 82,
+        "protein_g": 18,
+        "carbohydrates_g": 0,
+        "fat_g": 0.7,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 54
+      },
+      "tags": []
+    },
+    {
+      "id": 124,
+      "name": "Păstrăv",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 148,
+        "protein_g": 20.8,
+        "carbohydrates_g": 0,
+        "fat_g": 6.6,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 52
+      },
+      "tags": []
+    },
+    {
+      "id": 125,
+      "name": "Sardine conservă",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 208,
+        "protein_g": 24.6,
+        "carbohydrates_g": 0,
+        "fat_g": 11.5,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 505
+      },
+      "tags": []
+    },
+    {
+      "id": 126,
+      "name": "Macrou",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 205,
+        "protein_g": 19,
+        "carbohydrates_g": 0,
+        "fat_g": 13.9,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 90
+      },
+      "tags": []
+    },
+    {
+      "id": 127,
+      "name": "Hering",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 158,
+        "protein_g": 18,
+        "carbohydrates_g": 0,
+        "fat_g": 9,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 90
+      },
+      "tags": []
+    },
+    {
+      "id": 128,
+      "name": "Creveți",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 99,
+        "protein_g": 24,
+        "carbohydrates_g": 0.2,
+        "fat_g": 0.3,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 111
+      },
+      "tags": []
+    },
+    {
+      "id": 129,
+      "name": "Calamar",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 92,
+        "protein_g": 15.6,
+        "carbohydrates_g": 3.1,
+        "fat_g": 1.4,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 44
+      },
+      "tags": []
+    },
+    {
+      "id": 130,
+      "name": "Midii",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 86,
+        "protein_g": 11.9,
+        "carbohydrates_g": 3.7,
+        "fat_g": 2.2,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 286
+      },
+      "tags": []
+    },
+    {
+      "id": 131,
+      "name": "Scoici",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 148,
+        "protein_g": 25.6,
+        "carbohydrates_g": 5.1,
+        "fat_g": 2,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 667
+      },
+      "tags": []
+    },
+    {
+      "id": 132,
+      "name": "Icre",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 143,
+        "protein_g": 22,
+        "carbohydrates_g": 1.5,
+        "fat_g": 6.4,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 91
+      },
+      "tags": []
+    },
+    {
+      "id": 133,
+      "name": "Anșoa",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 210,
+        "protein_g": 29,
+        "carbohydrates_g": 0,
+        "fat_g": 9.7,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 3668
+      },
+      "tags": []
+    },
+    {
+      "id": 134,
+      "name": "Crab",
+      "category": "carne_peste_fructe_de_mare",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 97,
+        "protein_g": 19,
+        "carbohydrates_g": 0,
+        "fat_g": 1.5,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 1072
+      },
+      "tags": []
+    },
+    {
+      "id": 135,
+      "name": "Migdale",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 579,
+        "protein_g": 21.2,
+        "carbohydrates_g": 21.6,
+        "fat_g": 49.9,
+        "fiber_g": 12.5,
+        "sugars_g": 4.4,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 136,
+      "name": "Nuci",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 654,
+        "protein_g": 15.2,
+        "carbohydrates_g": 13.7,
+        "fat_g": 65.2,
+        "fiber_g": 6.7,
+        "sugars_g": 2.6,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 137,
+      "name": "Alune de pădure",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 628,
+        "protein_g": 15,
+        "carbohydrates_g": 16.7,
+        "fat_g": 60.8,
+        "fiber_g": 9.7,
+        "sugars_g": 4.3,
+        "sodium_mg": 0
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 138,
+      "name": "Arahide",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 567,
+        "protein_g": 25.8,
+        "carbohydrates_g": 16.1,
+        "fat_g": 49.2,
+        "fiber_g": 8.5,
+        "sugars_g": 4.7,
+        "sodium_mg": 18
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 139,
+      "name": "Caju",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 553,
+        "protein_g": 18.2,
+        "carbohydrates_g": 30.2,
+        "fat_g": 43.9,
+        "fiber_g": 3.3,
+        "sugars_g": 5.9,
+        "sodium_mg": 12
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 140,
+      "name": "Fistic",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 560,
+        "protein_g": 20.2,
+        "carbohydrates_g": 27.2,
+        "fat_g": 45.3,
+        "fiber_g": 10.6,
+        "sugars_g": 7.7,
+        "sodium_mg": 1
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 141,
+      "name": "Semințe floarea-soarelui",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 584,
+        "protein_g": 20.8,
+        "carbohydrates_g": 20,
+        "fat_g": 51.5,
+        "fiber_g": 8.6,
+        "sugars_g": 2.6,
+        "sodium_mg": 9
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 142,
+      "name": "Semințe dovleac",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 559,
+        "protein_g": 30.2,
+        "carbohydrates_g": 10.7,
+        "fat_g": 49,
+        "fiber_g": 6,
+        "sugars_g": 1.4,
+        "sodium_mg": 7
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 143,
+      "name": "Semințe chia",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 486,
+        "protein_g": 16.5,
+        "carbohydrates_g": 42.1,
+        "fat_g": 30.7,
+        "fiber_g": 34.4,
+        "sugars_g": 0,
+        "sodium_mg": 16
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 144,
+      "name": "Semințe in",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 534,
+        "protein_g": 18.3,
+        "carbohydrates_g": 28.9,
+        "fat_g": 42.2,
+        "fiber_g": 27.3,
+        "sugars_g": 1.6,
+        "sodium_mg": 30
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 145,
+      "name": "Susan",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 573,
+        "protein_g": 17.7,
+        "carbohydrates_g": 23.4,
+        "fat_g": 49.7,
+        "fiber_g": 11.8,
+        "sugars_g": 0.3,
+        "sodium_mg": 11
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 146,
+      "name": "Tahini",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 595,
+        "protein_g": 17,
+        "carbohydrates_g": 21,
+        "fat_g": 53.8,
+        "fiber_g": 9.3,
+        "sugars_g": 0.5,
+        "sodium_mg": 115
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 147,
+      "name": "Unt de arahide",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 588,
+        "protein_g": 25,
+        "carbohydrates_g": 20,
+        "fat_g": 50,
+        "fiber_g": 6,
+        "sugars_g": 9,
+        "sodium_mg": 459
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 148,
+      "name": "Ulei de măsline",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 884,
+        "protein_g": 0,
+        "carbohydrates_g": 0,
+        "fat_g": 100,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 2
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 149,
+      "name": "Ulei de floarea-soarelui",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 884,
+        "protein_g": 0,
+        "carbohydrates_g": 0,
+        "fat_g": 100,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 0
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 150,
+      "name": "Ulei de cocos",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 862,
+        "protein_g": 0,
+        "carbohydrates_g": 0,
+        "fat_g": 100,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 0
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 151,
+      "name": "Măsline verzi",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 145,
+        "protein_g": 1,
+        "carbohydrates_g": 3.8,
+        "fat_g": 15.3,
+        "fiber_g": 3.3,
+        "sugars_g": 0.5,
+        "sodium_mg": 1556
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 152,
+      "name": "Măsline negre",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 115,
+        "protein_g": 0.8,
+        "carbohydrates_g": 6.3,
+        "fat_g": 10.7,
+        "fiber_g": 3.2,
+        "sugars_g": 0,
+        "sodium_mg": 735
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 153,
+      "name": "Nucă de cocos",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 354,
+        "protein_g": 3.3,
+        "carbohydrates_g": 15.2,
+        "fat_g": 33.5,
+        "fiber_g": 9,
+        "sugars_g": 6.2,
+        "sodium_mg": 20
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 154,
+      "name": "Castane",
+      "category": "nuci_seminte_uleiuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 213,
+        "protein_g": 2.4,
+        "carbohydrates_g": 45.5,
+        "fat_g": 2.3,
+        "fiber_g": 8.1,
+        "sugars_g": 10.6,
+        "sodium_mg": 3
+      },
+      "tags": [
+        "vegetarian",
+        "vegan"
+      ]
+    },
+    {
+      "id": 155,
+      "name": "Zahăr alb",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 387,
+        "protein_g": 0,
+        "carbohydrates_g": 100,
+        "fat_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 100,
+        "sodium_mg": 1
+      },
+      "tags": []
+    },
+    {
+      "id": 156,
+      "name": "Miere",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 304,
+        "protein_g": 0.3,
+        "carbohydrates_g": 82.4,
+        "fat_g": 0,
+        "fiber_g": 0.2,
+        "sugars_g": 82.1,
+        "sodium_mg": 4
+      },
+      "tags": []
+    },
+    {
+      "id": 157,
+      "name": "Sirop de arțar",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 260,
+        "protein_g": 0,
+        "carbohydrates_g": 67,
+        "fat_g": 0.1,
+        "fiber_g": 0,
+        "sugars_g": 60,
+        "sodium_mg": 12
+      },
+      "tags": []
+    },
+    {
+      "id": 158,
+      "name": "Ciocolată neagră 70%",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 598,
+        "protein_g": 7.8,
+        "carbohydrates_g": 45.9,
+        "fat_g": 42.6,
+        "fiber_g": 10.9,
+        "sugars_g": 24,
+        "sodium_mg": 20
+      },
+      "tags": []
+    },
+    {
+      "id": 159,
+      "name": "Ciocolată cu lapte",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 535,
+        "protein_g": 7.7,
+        "carbohydrates_g": 59.4,
+        "fat_g": 29.7,
+        "fiber_g": 3.4,
+        "sugars_g": 51.5,
+        "sodium_mg": 79
+      },
+      "tags": []
+    },
+    {
+      "id": 160,
+      "name": "Gem",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 250,
+        "protein_g": 0.3,
+        "carbohydrates_g": 65,
+        "fat_g": 0.1,
+        "fiber_g": 1,
+        "sugars_g": 48,
+        "sodium_mg": 30
+      },
+      "tags": []
+    },
+    {
+      "id": 161,
+      "name": "Ketchup",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 112,
+        "protein_g": 1.3,
+        "carbohydrates_g": 25.8,
+        "fat_g": 0.1,
+        "fiber_g": 0.3,
+        "sugars_g": 22.8,
+        "sodium_mg": 907
+      },
+      "tags": []
+    },
+    {
+      "id": 162,
+      "name": "Maioneză",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 680,
+        "protein_g": 1,
+        "carbohydrates_g": 0.6,
+        "fat_g": 75,
+        "fiber_g": 0,
+        "sugars_g": 0.6,
+        "sodium_mg": 635
+      },
+      "tags": []
+    },
+    {
+      "id": 163,
+      "name": "Muștar",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 66,
+        "protein_g": 4.4,
+        "carbohydrates_g": 5.8,
+        "fat_g": 4,
+        "fiber_g": 3.3,
+        "sugars_g": 0.9,
+        "sodium_mg": 1135
+      },
+      "tags": []
+    },
+    {
+      "id": 164,
+      "name": "Oțet",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 18,
+        "protein_g": 0,
+        "carbohydrates_g": 0.9,
+        "fat_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0.4,
+        "sodium_mg": 2
+      },
+      "tags": []
+    },
+    {
+      "id": 165,
+      "name": "Sos de soia",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 53,
+        "protein_g": 8.1,
+        "carbohydrates_g": 4.9,
+        "fat_g": 0.6,
+        "fiber_g": 0.8,
+        "sugars_g": 0.4,
+        "sodium_mg": 5493
+      },
+      "tags": []
+    },
+    {
+      "id": 166,
+      "name": "Cafea neagră",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 1,
+        "protein_g": 0.1,
+        "carbohydrates_g": 0,
+        "fat_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 2
+      },
+      "tags": []
+    },
+    {
+      "id": 167,
+      "name": "Ceai neîndulcit",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 1,
+        "protein_g": 0,
+        "carbohydrates_g": 0,
+        "fat_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 1
+      },
+      "tags": []
+    },
+    {
+      "id": 168,
+      "name": "Suc de portocale",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 45,
+        "protein_g": 0.7,
+        "carbohydrates_g": 10.4,
+        "fat_g": 0.2,
+        "fiber_g": 0.2,
+        "sugars_g": 8.4,
+        "sodium_mg": 1
+      },
+      "tags": []
+    },
+    {
+      "id": 169,
+      "name": "Cola",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 42,
+        "protein_g": 0,
+        "carbohydrates_g": 10.6,
+        "fat_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 10.6,
+        "sodium_mg": 4
+      },
+      "tags": []
+    },
+    {
+      "id": 170,
+      "name": "Bere",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 43,
+        "protein_g": 0.5,
+        "carbohydrates_g": 3.6,
+        "fat_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0,
+        "sodium_mg": 4
+      },
+      "tags": []
+    },
+    {
+      "id": 171,
+      "name": "Vin roșu",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 85,
+        "protein_g": 0.1,
+        "carbohydrates_g": 2.6,
+        "fat_g": 0,
+        "fiber_g": 0,
+        "sugars_g": 0.6,
+        "sodium_mg": 4
+      },
+      "tags": []
+    },
+    {
+      "id": 172,
+      "name": "Popcorn simplu",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 387,
+        "protein_g": 12.9,
+        "carbohydrates_g": 78,
+        "fat_g": 4.5,
+        "fiber_g": 14.5,
+        "sugars_g": 0.9,
+        "sodium_mg": 8
+      },
+      "tags": []
+    },
+    {
+      "id": 173,
+      "name": "Chipsuri cartofi",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 536,
+        "protein_g": 7,
+        "carbohydrates_g": 53,
+        "fat_g": 35,
+        "fiber_g": 4.8,
+        "sugars_g": 0.2,
+        "sodium_mg": 525
+      },
+      "tags": []
+    },
+    {
+      "id": 174,
+      "name": "Covrigei",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 380,
+        "protein_g": 10,
+        "carbohydrates_g": 80,
+        "fat_g": 3,
+        "fiber_g": 3,
+        "sugars_g": 4,
+        "sodium_mg": 1200
+      },
+      "tags": []
+    },
+    {
+      "id": 175,
+      "name": "Pizza Margherita",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 266,
+        "protein_g": 11,
+        "carbohydrates_g": 33,
+        "fat_g": 10,
+        "fiber_g": 2.3,
+        "sugars_g": 3.6,
+        "sodium_mg": 598
+      },
+      "tags": []
+    },
+    {
+      "id": 176,
+      "name": "Cartofi prăjiți",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 312,
+        "protein_g": 3.4,
+        "carbohydrates_g": 41,
+        "fat_g": 15,
+        "fiber_g": 3.8,
+        "sugars_g": 0.3,
+        "sodium_mg": 210
+      },
+      "tags": []
+    },
+    {
+      "id": 177,
+      "name": "Burger vită simplu",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 295,
+        "protein_g": 17,
+        "carbohydrates_g": 24,
+        "fat_g": 15,
+        "fiber_g": 1.4,
+        "sugars_g": 4.2,
+        "sodium_mg": 414
+      },
+      "tags": []
+    },
+    {
+      "id": 178,
+      "name": "Clătite simple",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 227,
+        "protein_g": 6.4,
+        "carbohydrates_g": 28.3,
+        "fat_g": 9.7,
+        "fiber_g": 1.4,
+        "sugars_g": 4.8,
+        "sodium_mg": 439
+      },
+      "tags": []
+    },
+    {
+      "id": 179,
+      "name": "Orez expandat",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 402,
+        "protein_g": 7,
+        "carbohydrates_g": 90,
+        "fat_g": 1.3,
+        "fiber_g": 1,
+        "sugars_g": 0.5,
+        "sodium_mg": 3
+      },
+      "tags": []
+    },
+    {
+      "id": 180,
+      "name": "Granola",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 471,
+        "protein_g": 10,
+        "carbohydrates_g": 64,
+        "fat_g": 20,
+        "fiber_g": 7,
+        "sugars_g": 20,
+        "sodium_mg": 200
+      },
+      "tags": []
+    },
+    {
+      "id": 181,
+      "name": "Protein powder whey",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 400,
+        "protein_g": 80,
+        "carbohydrates_g": 8,
+        "fat_g": 6,
+        "fiber_g": 0,
+        "sugars_g": 4,
+        "sodium_mg": 300
+      },
+      "tags": []
+    },
+    {
+      "id": 182,
+      "name": "Lapte de soia",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 33,
+        "protein_g": 3.3,
+        "carbohydrates_g": 1.7,
+        "fat_g": 1.8,
+        "fiber_g": 0.6,
+        "sugars_g": 0.6,
+        "sodium_mg": 51
+      },
+      "tags": []
+    },
+    {
+      "id": 183,
+      "name": "Lapte de migdale",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 15,
+        "protein_g": 0.6,
+        "carbohydrates_g": 0.3,
+        "fat_g": 1.2,
+        "fiber_g": 0.2,
+        "sugars_g": 0.2,
+        "sodium_mg": 72
+      },
+      "tags": []
+    },
+    {
+      "id": 184,
+      "name": "Lapte de ovăz",
+      "category": "diverse",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 46,
+        "protein_g": 1,
+        "carbohydrates_g": 6.7,
+        "fat_g": 1.5,
+        "fiber_g": 0.8,
+        "sugars_g": 4,
+        "sodium_mg": 40
+      },
+      "tags": []
+    },
+    {
+      "id": 185,
+      "name": "Salată boeuf",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 190,
+        "protein_g": 5,
+        "carbohydrates_g": 12,
+        "fat_g": 13,
+        "fiber_g": 2,
+        "sugars_g": 2,
+        "sodium_mg": 450
+      },
+      "tags": []
+    },
+    {
+      "id": 186,
+      "name": "Zacuscă",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 110,
+        "protein_g": 2,
+        "carbohydrates_g": 9,
+        "fat_g": 7,
+        "fiber_g": 3,
+        "sugars_g": 4,
+        "sodium_mg": 500
+      },
+      "tags": []
+    },
+    {
+      "id": 187,
+      "name": "Mici",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 280,
+        "protein_g": 17,
+        "carbohydrates_g": 2,
+        "fat_g": 23,
+        "fiber_g": 0,
+        "sugars_g": 1,
+        "sodium_mg": 850
+      },
+      "tags": []
+    },
+    {
+      "id": 188,
+      "name": "Mămăligă simplă",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 70,
+        "protein_g": 1.6,
+        "carbohydrates_g": 15,
+        "fat_g": 0.4,
+        "fiber_g": 1.2,
+        "sugars_g": 0.2,
+        "sodium_mg": 10
+      },
+      "tags": []
+    },
+    {
+      "id": 189,
+      "name": "Brânză de burduf",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 330,
+        "protein_g": 18,
+        "carbohydrates_g": 1,
+        "fat_g": 28,
+        "fiber_g": 0,
+        "sugars_g": 0.5,
+        "sodium_mg": 1200
+      },
+      "tags": []
+    },
+    {
+      "id": 190,
+      "name": "Caș proaspăt",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 250,
+        "protein_g": 17,
+        "carbohydrates_g": 2,
+        "fat_g": 20,
+        "fiber_g": 0,
+        "sugars_g": 1,
+        "sodium_mg": 600
+      },
+      "tags": []
+    },
+    {
+      "id": 191,
+      "name": "Mămăligă cu brânză",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 160,
+        "protein_g": 6,
+        "carbohydrates_g": 18,
+        "fat_g": 7,
+        "fiber_g": 1,
+        "sugars_g": 1,
+        "sodium_mg": 350
+      },
+      "tags": []
+    },
+    {
+      "id": 192,
+      "name": "Sarmale",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 180,
+        "protein_g": 8,
+        "carbohydrates_g": 12,
+        "fat_g": 11,
+        "fiber_g": 2,
+        "sugars_g": 2,
+        "sodium_mg": 500
+      },
+      "tags": []
+    },
+    {
+      "id": 193,
+      "name": "Ciorbă de legume",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 35,
+        "protein_g": 1.2,
+        "carbohydrates_g": 5.8,
+        "fat_g": 0.8,
+        "fiber_g": 1.5,
+        "sugars_g": 2,
+        "sodium_mg": 280
+      },
+      "tags": []
+    },
+    {
+      "id": 194,
+      "name": "Supă de pui",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 36,
+        "protein_g": 3.5,
+        "carbohydrates_g": 2.5,
+        "fat_g": 1.4,
+        "fiber_g": 0.3,
+        "sugars_g": 0.8,
+        "sodium_mg": 250
+      },
+      "tags": []
+    },
+    {
+      "id": 195,
+      "name": "Salată boeuf 195",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 190,
+        "protein_g": 5,
+        "carbohydrates_g": 12,
+        "fat_g": 13,
+        "fiber_g": 2,
+        "sugars_g": 2,
+        "sodium_mg": 450
+      },
+      "tags": []
+    },
+    {
+      "id": 196,
+      "name": "Zacuscă 196",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 110,
+        "protein_g": 2,
+        "carbohydrates_g": 9,
+        "fat_g": 7,
+        "fiber_g": 3,
+        "sugars_g": 4,
+        "sodium_mg": 500
+      },
+      "tags": []
+    },
+    {
+      "id": 197,
+      "name": "Mici 197",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 280,
+        "protein_g": 17,
+        "carbohydrates_g": 2,
+        "fat_g": 23,
+        "fiber_g": 0,
+        "sugars_g": 1,
+        "sodium_mg": 850
+      },
+      "tags": []
+    },
+    {
+      "id": 198,
+      "name": "Mămăligă simplă 198",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 70,
+        "protein_g": 1.6,
+        "carbohydrates_g": 15,
+        "fat_g": 0.4,
+        "fiber_g": 1.2,
+        "sugars_g": 0.2,
+        "sodium_mg": 10
+      },
+      "tags": []
+    },
+    {
+      "id": 199,
+      "name": "Brânză de burduf 199",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 330,
+        "protein_g": 18,
+        "carbohydrates_g": 1,
+        "fat_g": 28,
+        "fiber_g": 0,
+        "sugars_g": 0.5,
+        "sodium_mg": 1200
+      },
+      "tags": []
+    },
+    {
+      "id": 200,
+      "name": "Caș proaspăt 200",
+      "category": "preparate_romanesti",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 250,
+        "protein_g": 17,
+        "carbohydrates_g": 2,
+        "fat_g": 20,
+        "fiber_g": 0,
+        "sugars_g": 1,
+        "sodium_mg": 600
+      },
+      "tags": []
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "exportedAt": "2026-05-27 22:19:53",
+  "databasePath": "C:\\Users\\LARISA\\Desktop\\UniApp\\bin\\Debug\\net10.0\\tracker.db",
+  "users": [
+    {
+      "id": 1,
+      "username": "larisa"
+    },
+    {
+      "id": 2,
+      "username": "marius"
+    },
+    {
+      "id": 3,
+      "username": "maria"
+    },
+    {
+      "id": 4,
+      "username": "patri"
+    }
+  ],
+  "userProfiles": [
+    {
+      "userId": 2,
+      "age": 25,
+      "heightCm": 170,
+      "weightKg": 70,
+      "sex": "F",
+      "activityLevel": "Usor",
+      "goal": "Slabire",
+      "dailyCalorieGoal": 1630
+    }
+  ],
+  "loginHistory": [
+    {
+      "id": 1,
+      "userId": 2,
+      "loggedInAt": "2026-05-27 21:37:17"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "loggedInAt": "2026-05-27 21:47:01"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "loggedInAt": "2026-05-27 21:54:03"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "loggedInAt": "2026-05-27 22:19:15"
+    }
+  ],
+  "foodLogs": [
+    {
+      "id": 8,
+      "userId": 2,
+      "foodName": "Morcov",
+      "grams": 100,
+      "caloriesPer100g": 41,
+      "calories": 41,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Dimineata",
+      "date": "2026-05-27"
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "foodName": "Orez alb fiert",
+      "grams": 400,
+      "caloriesPer100g": 130,
+      "calories": 520,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Dimineata",
+      "date": "2026-05-27"
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "foodName": "Varz\u0103 ro\u0219ie",
+      "grams": 100,
+      "caloriesPer100g": 31,
+      "calories": 31,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Seara",
+      "date": "2026-05-27"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "foodName": "Varz\u0103 ro\u0219ie",
+      "grams": 100,
+      "caloriesPer100g": 31,
+      "calories": 31,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Dimineata",
+      "date": "2026-05-27"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "foodName": "Broccoli",
+      "grams": 100,
+      "caloriesPer100g": 34,
+      "calories": 34,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Dimineata",
+      "date": "2026-05-27"
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "foodName": "Ardei gras",
+      "grams": 100,
+      "caloriesPer100g": 31,
+      "calories": 31,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Amiaza",
+      "date": "2026-05-26"
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "foodName": "Ro\u0219ie",
+      "grams": 100,
+      "caloriesPer100g": 18,
+      "calories": 18,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Dimineata",
+      "date": "2026-05-26"
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "foodName": "Pulp\u0103 de pui g\u0103tit\u0103",
+      "grams": 100,
+      "caloriesPer100g": 209,
+      "calories": 209,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Dimineata",
+      "date": "2026-05-25"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "foodName": "cevz",
+      "grams": 100,
+      "caloriesPer100g": 0,
+      "calories": 445,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Sear\u0103",
+      "date": "2026-05-22"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "foodName": "albus",
+      "grams": 100,
+      "caloriesPer100g": 0,
+      "calories": 345,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Amiaz\u0103",
+      "date": "2026-05-22"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "foodName": "paine",
+      "grams": 100,
+      "caloriesPer100g": 0,
+      "calories": 897,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "mealType": "Diminea\u021B\u0103",
+      "date": "2026-05-22"
+    }
+  ],
+  "sportLogs": [
+    {
+      "id": 1,
+      "userId": 2,
+      "sportName": "Inot",
+      "minutes": 30,
+      "caloriesBurned": 250,
+      "date": "2026-05-27"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "sportName": "Mers pe jos",
+      "minutes": 30,
+      "caloriesBurned": 110,
+      "date": "2026-05-25"
+    }
+  ],
+  "favoriteMeals": []
+}

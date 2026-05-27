@@ -1,0 +1,670 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="UniApp.Views.MainWindow"
+        Title="UniApp"
+        Width="1080"
+        Height="720"
+        MinWidth="900"
+        MinHeight="620">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="PanelBackground" Color="#FFFFFF"/>
+        <SolidColorBrush x:Key="PageBackground" Color="#EEF4F7"/>
+        <SolidColorBrush x:Key="MutedText" Color="#667085"/>
+        <SolidColorBrush x:Key="Ink" Color="#182230"/>
+        <SolidColorBrush x:Key="FoodColor" Color="#14B8A6"/>
+        <SolidColorBrush x:Key="SportColor" Color="#F97316"/>
+        <SolidColorBrush x:Key="Accent" Color="#2563EB"/>
+        <SolidColorBrush x:Key="BorderColor" Color="#D7E0EA"/>
+        <SolidColorBrush x:Key="SoftBlue" Color="#EAF2FF"/>
+        <SolidColorBrush x:Key="SoftGreen" Color="#E8F7F3"/>
+        <SolidColorBrush x:Key="SoftOrange" Color="#FFF1E8"/>
+    </Window.Resources>
+
+    <Grid Background="{StaticResource PageBackground}">
+        <Grid IsVisible="{Binding IsAuthVisible}"
+              Width="410"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+            <Border Background="{StaticResource PanelBackground}"
+                    BorderBrush="{StaticResource BorderColor}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="30">
+                <StackPanel Spacing="16">
+                    <StackPanel Spacing="4">
+                        <TextBlock Text="UniApp"
+                                   FontSize="32"
+                                   FontWeight="Bold"
+                                   Foreground="{StaticResource Ink}"/>
+                        <TextBlock Text="Login sau creare cont pentru jurnalul tau."
+                                   Foreground="{StaticResource MutedText}"/>
+                    </StackPanel>
+
+                    <TextBox Watermark="Username"
+                             Text="{Binding Username, Mode=TwoWay}"/>
+
+                    <TextBox Watermark="Parola"
+                             PasswordChar="*"
+                             Text="{Binding Password, Mode=TwoWay}"/>
+
+                    <Grid ColumnDefinitions="*,*">
+                        <Button Grid.Column="0"
+                                Content="Login"
+                                HorizontalAlignment="Stretch"
+                                Margin="0,0,6,0"
+                                Command="{Binding LoginCommand}"/>
+                        <Button Grid.Column="1"
+                                Content="Creeaza cont"
+                                HorizontalAlignment="Stretch"
+                                Margin="6,0,0,0"
+                                Command="{Binding RegisterCommand}"/>
+                    </Grid>
+
+                    <TextBlock Text="{Binding StatusMessage}"
+                               Foreground="{StaticResource MutedText}"
+                               TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <Grid IsVisible="{Binding IsLoggedIn}"
+              RowDefinitions="Auto,*"
+              Margin="26">
+            <Border Grid.Row="0"
+                    Background="{StaticResource PanelBackground}"
+                    BorderBrush="{StaticResource BorderColor}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="18">
+                <Grid ColumnDefinitions="*,Auto,Auto,Auto,Auto">
+                    <StackPanel Spacing="3">
+                        <TextBlock Text="{Binding WelcomeMessage}"
+                                   FontSize="25"
+                                   FontWeight="Bold"
+                                   Foreground="{StaticResource Ink}"/>
+                        <TextBlock Text="Alege alimentul, scrie gramele, adauga sportul si vezi netul zilei."
+                                   Foreground="{StaticResource MutedText}"/>
+                        <TextBlock Text="{Binding DatabasePath, StringFormat='Baza de date: {0}'}"
+                                   Foreground="{StaticResource MutedText}"
+                                   FontSize="11"
+                                   TextWrapping="Wrap"/>
+                        <TextBlock Text="{Binding JsonExportPath, StringFormat='Export JSON: {0}'}"
+                                   Foreground="{StaticResource MutedText}"
+                                   FontSize="11"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1"
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center"
+                                Spacing="4">
+                        <TextBlock Text="{Binding SelectedDayTitle}"
+                                   Foreground="{StaticResource MutedText}"
+                                   FontSize="12"/>
+                        <DatePicker SelectedDate="{Binding SelectedDate, Mode=TwoWay}"/>
+                    </StackPanel>
+
+                    <Button Grid.Column="2"
+                            Content="Azi"
+                            Margin="10,0,0,0"
+                            VerticalAlignment="Center"
+                            Command="{Binding ShowTodayCommand}"/>
+                    <Button Grid.Column="3"
+                            Content="Statistici"
+                            Margin="8,0,0,0"
+                            VerticalAlignment="Center"
+                            Command="{Binding ShowStatsCommand}"/>
+                    <Button Grid.Column="4"
+                            Content="Logout"
+                            Margin="8,0,0,0"
+                            VerticalAlignment="Center"
+                            Command="{Binding LogoutCommand}"/>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="1"
+                  IsVisible="{Binding IsTodayVisible}"
+                  ColumnDefinitions="360,*"
+                  Margin="0,18,0,0">
+                <ScrollViewer Grid.Column="0"
+                              Margin="0,0,9,0">
+                    <StackPanel Spacing="14">
+                        <Border Background="{StaticResource PanelBackground}"
+                                BorderBrush="{StaticResource BorderColor}"
+                                BorderThickness="1"
+                                CornerRadius="8"
+                                Padding="18">
+                            <StackPanel Spacing="12">
+                                <TextBlock Text="Cauta si adauga masa"
+                                           FontSize="19"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource Ink}"/>
+
+                                <TextBox Watermark="Scrie alimentul"
+                                         Text="{Binding FoodSearchText, Mode=TwoWay}"/>
+
+                                <ListBox ItemsSource="{Binding FoodSuggestions}"
+                                         SelectedItem="{Binding SelectedFood, Mode=TwoWay}"
+                                         MaxHeight="150"/>
+
+                                <Grid ColumnDefinitions="*,120">
+                                    <TextBox Grid.Column="0"
+                                             Watermark="Grame"
+                                             Text="{Binding GramsString, Mode=TwoWay}"
+                                             Margin="0,0,8,0"/>
+                                    <ComboBox Grid.Column="1"
+                                              ItemsSource="{Binding MealTypes}"
+                                              SelectedItem="{Binding SelectedMealType, Mode=TwoWay}"/>
+                                </Grid>
+
+                                <Border Background="{StaticResource SoftGreen}"
+                                        CornerRadius="8"
+                                        Padding="12">
+                                    <TextBlock Text="{Binding PreviewFoodCalories, StringFormat='Calcul automat: {0} kcal'}"
+                                               FontWeight="SemiBold"
+                                               Foreground="{StaticResource Ink}"/>
+                                </Border>
+
+                                <Button Content="{Binding FoodActionText}"
+                                        HorizontalAlignment="Stretch"
+                                        Command="{Binding SaveFoodCommand}"/>
+
+                                <Button Content="Salveaza ca masa rapida"
+                                        HorizontalAlignment="Stretch"
+                                        Command="{Binding AddFavoriteCommand}"/>
+
+                                <Button Content="Renunta la editare"
+                                        HorizontalAlignment="Stretch"
+                                        IsVisible="{Binding IsEditingFood}"
+                                        Command="{Binding CancelFoodEditCommand}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <Border Background="{StaticResource PanelBackground}"
+                                BorderBrush="{StaticResource BorderColor}"
+                                BorderThickness="1"
+                                CornerRadius="8"
+                                Padding="18">
+                            <StackPanel Spacing="10">
+                                <TextBlock Text="Mese rapide"
+                                           FontSize="19"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource Ink}"/>
+                                <ListBox ItemsSource="{Binding FavoriteMeals}"
+                                         SelectedItem="{Binding SelectedFavoriteMeal, Mode=TwoWay}"
+                                         MaxHeight="100"/>
+                                <Button Content="Adauga rapid in zi"
+                                        HorizontalAlignment="Stretch"
+                                        Command="{Binding UseFavoriteCommand}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <Border Background="{StaticResource PanelBackground}"
+                                BorderBrush="{StaticResource BorderColor}"
+                                BorderThickness="1"
+                                CornerRadius="8"
+                                Padding="18">
+                            <StackPanel Spacing="12">
+                                <TextBlock Text="Adauga sport"
+                                           FontSize="19"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource Ink}"/>
+
+                                <ComboBox ItemsSource="{Binding SportOptions}"
+                                          SelectedItem="{Binding SelectedSport, Mode=TwoWay}"
+                                          HorizontalAlignment="Stretch"/>
+
+                                <TextBox Watermark="Minute"
+                                         Text="{Binding SportMinutesString, Mode=TwoWay}"/>
+
+                                <Border Background="{StaticResource SoftOrange}"
+                                        CornerRadius="8"
+                                        Padding="12">
+                                    <TextBlock Text="{Binding PreviewSportCalories, StringFormat='Se scad: {0} kcal'}"
+                                               FontWeight="SemiBold"
+                                               Foreground="{StaticResource Ink}"/>
+                                </Border>
+
+                                <Button Content="Salveaza sport"
+                                        HorizontalAlignment="Stretch"
+                                        Command="{Binding AddSportCommand}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <Border Background="{StaticResource PanelBackground}"
+                                BorderBrush="{StaticResource BorderColor}"
+                                BorderThickness="1"
+                                CornerRadius="8"
+                                Padding="18">
+                            <StackPanel Spacing="10">
+                                <TextBlock Text="Profil si obiectiv"
+                                           FontSize="19"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource Ink}"/>
+                                <Grid ColumnDefinitions="*,*">
+                                    <TextBox Watermark="Varsta"
+                                             Text="{Binding AgeString, Mode=TwoWay}"
+                                             Margin="0,0,6,0"/>
+                                    <TextBox Grid.Column="1"
+                                             Watermark="Inaltime cm"
+                                             Text="{Binding HeightString, Mode=TwoWay}"
+                                             Margin="6,0,0,0"/>
+                                </Grid>
+                                <TextBox Watermark="Greutate kg"
+                                         Text="{Binding WeightString, Mode=TwoWay}"/>
+                                <Grid ColumnDefinitions="*,*">
+                                    <ComboBox ItemsSource="{Binding SexOptions}"
+                                              SelectedItem="{Binding SelectedSex, Mode=TwoWay}"
+                                              Margin="0,0,6,0"/>
+                                    <ComboBox Grid.Column="1"
+                                              ItemsSource="{Binding ActivityLevels}"
+                                              SelectedItem="{Binding SelectedActivityLevel, Mode=TwoWay}"
+                                              Margin="6,0,0,0"/>
+                                </Grid>
+                                <ComboBox ItemsSource="{Binding GoalOptions}"
+                                          SelectedItem="{Binding SelectedGoal, Mode=TwoWay}"/>
+                                <Button Content="Calculeaza target"
+                                        HorizontalAlignment="Stretch"
+                                        Command="{Binding SaveProfileCommand}"/>
+                            </StackPanel>
+                        </Border>
+
+                        <TextBlock Text="{Binding StatusMessage}"
+                                   Foreground="{StaticResource MutedText}"
+                                   TextWrapping="Wrap"/>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <Grid Grid.Column="1"
+                      RowDefinitions="Auto,Auto,*"
+                      Margin="9,0,0,0">
+                    <Grid ColumnDefinitions="*,*,*">
+                        <Border Background="{StaticResource SoftGreen}"
+                                CornerRadius="8"
+                                Padding="16"
+                                Margin="0,0,8,0">
+                            <StackPanel>
+                                <TextBlock Text="Mancat azi"
+                                           Foreground="{StaticResource MutedText}"/>
+                                <TextBlock Text="{Binding TotalFoodCalories, StringFormat='{}{0} kcal'}"
+                                           FontSize="28"
+                                           FontWeight="Bold"
+                                           Foreground="{StaticResource FoodColor}"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Column="1"
+                                Background="{StaticResource SoftOrange}"
+                                CornerRadius="8"
+                                Padding="16"
+                                Margin="4,0,4,0">
+                            <StackPanel>
+                                <TextBlock Text="Sport azi"
+                                           Foreground="{StaticResource MutedText}"/>
+                                <TextBlock Text="{Binding TotalBurnedCalories, StringFormat='-{0} kcal'}"
+                                           FontSize="28"
+                                           FontWeight="Bold"
+                                           Foreground="{StaticResource SportColor}"/>
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Column="2"
+                                Background="{StaticResource SoftBlue}"
+                                CornerRadius="8"
+                                Padding="16"
+                                Margin="8,0,0,0">
+                            <StackPanel>
+                                <TextBlock Text="Total net"
+                                           Foreground="{StaticResource MutedText}"/>
+                                <TextBlock Text="{Binding NetCalories, StringFormat='{}{0} kcal'}"
+                                           FontSize="28"
+                                           FontWeight="Bold"
+                                           Foreground="{StaticResource Accent}"/>
+                                <TextBlock Text="{Binding DailyCalorieGoal, StringFormat='Target: {0} kcal'}"
+                                           Foreground="{StaticResource MutedText}"/>
+                                <TextBlock Text="{Binding TargetStatus}"
+                                           Foreground="{StaticResource MutedText}"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+
+                    <Border Grid.Row="1"
+                            Background="{StaticResource PanelBackground}"
+                            BorderBrush="{StaticResource BorderColor}"
+                            BorderThickness="1"
+                            CornerRadius="8"
+                            Padding="14"
+                            Margin="0,14,0,0">
+                        <Grid ColumnDefinitions="90,210,*"
+                              RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+                            <TextBlock Text="Grafic zi"
+                                       FontWeight="SemiBold"
+                                       Foreground="{StaticResource Ink}"
+                                       Grid.ColumnSpan="3"/>
+
+                            <TextBlock Grid.Row="1" Text="Dimineata" Foreground="{StaticResource MutedText}"/>
+                            <Border Grid.Row="1" Grid.Column="1" Height="15" Width="{Binding BreakfastBarWidth}" Background="{StaticResource FoodColor}" CornerRadius="8" HorizontalAlignment="Left"/>
+                            <TextBlock Grid.Row="1" Grid.Column="2" Text="{Binding BreakfastCalories, StringFormat='{}{0} kcal'}"/>
+
+                            <TextBlock Grid.Row="2" Text="Amiaza" Foreground="{StaticResource MutedText}"/>
+                            <Border Grid.Row="2" Grid.Column="1" Height="15" Width="{Binding LunchBarWidth}" Background="{StaticResource FoodColor}" CornerRadius="8" HorizontalAlignment="Left"/>
+                            <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding LunchCalories, StringFormat='{}{0} kcal'}"/>
+
+                            <TextBlock Grid.Row="3" Text="Seara" Foreground="{StaticResource MutedText}"/>
+                            <Border Grid.Row="3" Grid.Column="1" Height="15" Width="{Binding DinnerBarWidth}" Background="{StaticResource FoodColor}" CornerRadius="8" HorizontalAlignment="Left"/>
+                            <TextBlock Grid.Row="3" Grid.Column="2" Text="{Binding DinnerCalories, StringFormat='{}{0} kcal'}"/>
+
+                            <TextBlock Grid.Row="4" Text="Gustare" Foreground="{StaticResource MutedText}"/>
+                            <Border Grid.Row="4" Grid.Column="1" Height="15" Width="{Binding SnackBarWidth}" Background="{StaticResource FoodColor}" CornerRadius="8" HorizontalAlignment="Left"/>
+                            <TextBlock Grid.Row="4" Grid.Column="2" Text="{Binding SnackCalories, StringFormat='{}{0} kcal'}"/>
+
+                            <TextBlock Grid.Row="5" Text="Sport" Foreground="{StaticResource MutedText}"/>
+                            <Border Grid.Row="5" Grid.Column="1" Height="15" Width="{Binding SportBarWidth}" Background="{StaticResource SportColor}" CornerRadius="8" HorizontalAlignment="Left"/>
+                            <TextBlock Grid.Row="5" Grid.Column="2" Text="{Binding TotalBurnedCalories, StringFormat='{}{0} kcal'}"/>
+
+                            <TextBlock Grid.Row="6" Text="Proteine" Foreground="{StaticResource MutedText}"/>
+                            <TextBlock Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding ProteinTotal, StringFormat='{}{0:0.#} g'}"/>
+
+                            <TextBlock Grid.Row="7" Text="Carbo" Foreground="{StaticResource MutedText}"/>
+                            <TextBlock Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding CarbsTotal, StringFormat='{}{0:0.#} g'}"/>
+
+                            <TextBlock Grid.Row="8" Text="Grasimi" Foreground="{StaticResource MutedText}"/>
+                            <TextBlock Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding FatTotal, StringFormat='{}{0:0.#} g'}"/>
+                        </Grid>
+                    </Border>
+
+                    <Grid Grid.Row="2"
+                          ColumnDefinitions="*,*,*"
+                          Margin="0,14,0,0">
+                        <Border Background="{StaticResource PanelBackground}"
+                                BorderBrush="{StaticResource BorderColor}"
+                                BorderThickness="1"
+                                CornerRadius="8"
+                                Padding="18"
+                                Margin="0,0,8,0">
+                            <Grid RowDefinitions="Auto,Auto,*">
+                                <TextBlock Text="Mese pentru ziua selectata"
+                                           FontSize="19"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource Ink}"/>
+                                <StackPanel Grid.Row="1"
+                                            Margin="0,8,0,8">
+                                    <TextBlock Text="{Binding BreakfastCalories, StringFormat='Dimineata: {0} kcal'}"/>
+                                    <TextBlock Text="{Binding LunchCalories, StringFormat='Amiaza: {0} kcal'}"/>
+                                    <TextBlock Text="{Binding DinnerCalories, StringFormat='Seara: {0} kcal'}"/>
+                                    <TextBlock Text="{Binding SnackCalories, StringFormat='Gustare: {0} kcal'}"/>
+                                    <Grid ColumnDefinitions="*,*"
+                                          Margin="0,8,0,0">
+                                        <Button Grid.Column="0"
+                                                Content="Editeaza"
+                                                Margin="0,0,5,0"
+                                                Command="{Binding EditSelectedFoodCommand}"/>
+                                        <Button Grid.Column="1"
+                                                Content="Sterge"
+                                                Margin="5,0,0,0"
+                                                Command="{Binding DeleteSelectedFoodCommand}"/>
+                                    </Grid>
+                                </StackPanel>
+                                <ScrollViewer Grid.Row="2">
+                                    <ListBox ItemsSource="{Binding TodayFoodLogs}"
+                                             SelectedItem="{Binding SelectedFoodLog, Mode=TwoWay}">
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border BorderBrush="{StaticResource BorderColor}"
+                                                        BorderThickness="0,0,0,1"
+                                                        Padding="0,10">
+                                                    <Grid ColumnDefinitions="*,90">
+                                                        <StackPanel>
+                                                            <TextBlock Text="{Binding FoodName}"
+                                                                       FontWeight="SemiBold"/>
+                                                            <TextBlock Text="{Binding Details}"
+                                                                       Foreground="{StaticResource MutedText}"
+                                                                       FontSize="12"/>
+                                                        </StackPanel>
+                                                        <TextBlock Grid.Column="1"
+                                                                   Text="{Binding Calories, StringFormat='{}{0} kcal'}"
+                                                                   HorizontalAlignment="Right"
+                                                                   VerticalAlignment="Center"
+                                                                   Foreground="{StaticResource FoodColor}"
+                                                                   FontWeight="SemiBold"/>
+                                                    </Grid>
+                                                </Border>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </ScrollViewer>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="1"
+                                Background="{StaticResource PanelBackground}"
+                                BorderBrush="{StaticResource BorderColor}"
+                                BorderThickness="1"
+                                CornerRadius="8"
+                                Padding="18"
+                                Margin="8,0,0,0">
+                            <Grid RowDefinitions="Auto,*">
+                                <TextBlock Text="Sport pentru ziua selectata"
+                                           FontSize="19"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource Ink}"/>
+                                <ScrollViewer Grid.Row="1"
+                                              Margin="0,10,0,0">
+                                    <ItemsControl ItemsSource="{Binding TodaySportLogs}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border BorderBrush="{StaticResource BorderColor}"
+                                                        BorderThickness="0,0,0,1"
+                                                        Padding="0,10">
+                                                    <Grid ColumnDefinitions="*,90">
+                                                        <StackPanel>
+                                                            <TextBlock Text="{Binding SportName}"
+                                                                       FontWeight="SemiBold"/>
+                                                            <TextBlock Text="{Binding Details}"
+                                                                       Foreground="{StaticResource MutedText}"
+                                                                       FontSize="12"/>
+                                                        </StackPanel>
+                                                        <TextBlock Grid.Column="1"
+                                                                   Text="{Binding CaloriesBurned, StringFormat='-{0} kcal'}"
+                                                                   HorizontalAlignment="Right"
+                                                                   VerticalAlignment="Center"
+                                                                   Foreground="{StaticResource SportColor}"
+                                                                   FontWeight="SemiBold"/>
+                                                    </Grid>
+                                                </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </ScrollViewer>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="2"
+                                Background="{StaticResource PanelBackground}"
+                                BorderBrush="{StaticResource BorderColor}"
+                                BorderThickness="1"
+                                CornerRadius="8"
+                                Padding="18"
+                                Margin="8,0,0,0">
+                            <Grid RowDefinitions="Auto,*">
+                                <TextBlock Text="Recomandari"
+                                           FontSize="19"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource Ink}"/>
+                                <ScrollViewer Grid.Row="1"
+                                              Margin="0,10,0,0">
+                                    <ItemsControl ItemsSource="{Binding Recommendations}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding}"
+                                                           TextWrapping="Wrap"
+                                                           Margin="0,0,0,8"
+                                                           Foreground="{StaticResource MutedText}"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </ScrollViewer>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="1"
+                  IsVisible="{Binding IsStatsVisible}"
+                  RowDefinitions="Auto,*"
+                  Margin="0,18,0,0">
+                <Grid ColumnDefinitions="*,*,*,Auto">
+                    <Border Background="{StaticResource SoftGreen}"
+                            CornerRadius="8"
+                            Padding="16"
+                            Margin="0,0,8,0">
+                        <StackPanel>
+                            <TextBlock Text="Mancat in 7 zile"
+                                       Foreground="{StaticResource MutedText}"/>
+                            <TextBlock Text="{Binding WeekFoodCalories, StringFormat='{}{0} kcal'}"
+                                       FontSize="30"
+                                       FontWeight="Bold"
+                                       Foreground="{StaticResource FoodColor}"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="1"
+                            Background="{StaticResource SoftOrange}"
+                            CornerRadius="8"
+                            Padding="16"
+                            Margin="4,0,4,0">
+                        <StackPanel>
+                            <TextBlock Text="Arse prin sport"
+                                       Foreground="{StaticResource MutedText}"/>
+                            <TextBlock Text="{Binding WeekBurnedCalories, StringFormat='-{0} kcal'}"
+                                       FontSize="30"
+                                       FontWeight="Bold"
+                                       Foreground="{StaticResource SportColor}"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Grid.Column="2"
+                            Background="{StaticResource SoftBlue}"
+                            CornerRadius="8"
+                            Padding="16"
+                            Margin="8,0,0,0">
+                        <StackPanel>
+                            <TextBlock Text="Net saptamana"
+                                       Foreground="{StaticResource MutedText}"/>
+                            <TextBlock Text="{Binding WeekNetCalories, StringFormat='{}{0} kcal'}"
+                                       FontSize="30"
+                                       FontWeight="Bold"
+                                       Foreground="{StaticResource Accent}"/>
+                        </StackPanel>
+                    </Border>
+                    <StackPanel Grid.Column="3"
+                                Margin="12,0,0,0"
+                                VerticalAlignment="Center"
+                                Spacing="8">
+                        <Button Content="Export raport"
+                                Command="{Binding ExportWeeklyReportCommand}"/>
+                        <TextBlock Text="{Binding LastWeeklyReportPath}"
+                                   Width="190"
+                                   TextWrapping="Wrap"
+                                   FontSize="11"
+                                   Foreground="{StaticResource MutedText}"/>
+                    </StackPanel>
+                </Grid>
+
+                <Border Grid.Row="1"
+                        Background="{StaticResource PanelBackground}"
+                        BorderBrush="{StaticResource BorderColor}"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Padding="20"
+                        Margin="0,14,0,0">
+                    <Grid RowDefinitions="Auto,Auto,*">
+                        <TextBlock Text="Grafic calorii pe ultimele 7 zile"
+                                   FontSize="22"
+                                   FontWeight="SemiBold"
+                                   Foreground="{StaticResource Ink}"/>
+
+                        <ItemsControl Grid.Row="1"
+                                      ItemsSource="{Binding DayStatuses}"
+                                      Margin="0,12,0,0">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderBrush="{StaticResource BorderColor}"
+                                            BorderThickness="1"
+                                            CornerRadius="8"
+                                            Padding="10"
+                                            Margin="0,0,8,8">
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding DayLabel}"
+                                                       FontWeight="SemiBold"/>
+                                            <TextBlock Text="{Binding StatusText}"
+                                                       Foreground="{StaticResource MutedText}"
+                                                       FontSize="12"/>
+                                            <TextBlock Text="{Binding NetCalories, StringFormat='Net {0} kcal'}"
+                                                       Foreground="{StaticResource Accent}"
+                                                       FontSize="12"/>
+                                            <TextBlock Text="{Binding ColorName}"
+                                                       Foreground="{StaticResource MutedText}"
+                                                       FontSize="11"/>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                        <ScrollViewer Grid.Row="2"
+                                      Margin="0,14,0,0">
+                            <ItemsControl ItemsSource="{Binding WeeklyStats}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid ColumnDefinitions="70,260,260,*"
+                                              Margin="0,0,0,14">
+                                            <TextBlock Text="{Binding DayLabel}"
+                                                       VerticalAlignment="Center"
+                                                       FontWeight="SemiBold"/>
+
+                                            <StackPanel Grid.Column="1"
+                                                        Spacing="4"
+                                                        Margin="0,0,14,0">
+                                                <TextBlock Text="{Binding FoodCalories, StringFormat='Mancat: {0} kcal'}"
+                                                           Foreground="{StaticResource MutedText}"
+                                                           FontSize="12"/>
+                                                <Border Height="18"
+                                                        Width="{Binding FoodBarWidth}"
+                                                        Background="{StaticResource FoodColor}"
+                                                        CornerRadius="8"
+                                                        HorizontalAlignment="Left"/>
+                                            </StackPanel>
+
+                                            <StackPanel Grid.Column="2"
+                                                        Spacing="4"
+                                                        Margin="0,0,14,0">
+                                                <TextBlock Text="{Binding BurnedCalories, StringFormat='Sport: {0} kcal'}"
+                                                           Foreground="{StaticResource MutedText}"
+                                                           FontSize="12"/>
+                                                <Border Height="18"
+                                                        Width="{Binding BurnedBarWidth}"
+                                                        Background="{StaticResource SportColor}"
+                                                        CornerRadius="8"
+                                                        HorizontalAlignment="Left"/>
+                                            </StackPanel>
+
+                                            <TextBlock Grid.Column="3"
+                                                       Text="{Binding NetCalories, StringFormat='Net: {0} kcal'}"
+                                                       VerticalAlignment="Center"
+                                                       FontWeight="SemiBold"
+                                                       Foreground="{StaticResource Accent}"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

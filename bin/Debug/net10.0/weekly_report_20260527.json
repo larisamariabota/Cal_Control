@@ -1,0 +1,18 @@
+{
+  "startDate": "2026-05-21",
+  "endDate": "2026-05-27",
+  "totalFoodCalories": 915,
+  "totalBurnedCalories": 360,
+  "netCalories": 555,
+  "protein": 0,
+  "carbs": 0,
+  "fat": 0,
+  "bestSportDay": {
+    "date": "2026-05-27",
+    "calories": 250
+  },
+  "highestFoodDay": {
+    "date": "2026-05-27",
+    "calories": 657
+  }
+}
