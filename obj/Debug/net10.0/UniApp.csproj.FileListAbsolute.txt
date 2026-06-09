@@ -101,3 +101,4 @@ C:\Users\LARISA\Desktop\UniApp\obj\Debug\net10.0\UniApp.csproj.Up2Date
 C:\Users\LARISA\Desktop\UniApp\obj\Debug\net10.0\UniApp.genruntimeconfig.cache
 C:\Users\LARISA\Desktop\UniApp\obj\Debug\net10.0\ref\UniApp.dll
 C:\Users\LARISA\Desktop\UniApp\bin\Debug\net10.0\Assets\baza_date_alimente_200.json
+C:\Users\LARISA\Desktop\UniApp\obj\Debug\net10.0\UniApp.sourcelink.json

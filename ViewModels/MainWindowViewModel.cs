@@ -468,11 +468,24 @@ namespace UniApp.ViewModels
         {
             FoodSuggestions.Clear();
             var query = FoodSearchText.Trim();
-            var matches = string.IsNullOrWhiteSpace(query)
-                ? FoodOptions.Take(8)
-                : FoodOptions
+            IEnumerable<FoodCatalogItem> matches;
+
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                var defaultCategories = new[] { "cereale_si_panificatie", "dulciuri", "carne_peste_fructe_de_mare", "lactate_si_oua", "legume", "fructe" };
+                var categorySuggestions = defaultCategories
+                    .SelectMany(cat => FoodOptions.Where(f => f.Category.Equals(cat, StringComparison.OrdinalIgnoreCase)).Take(2));
+
+                matches = categorySuggestions
+                    .Concat(FoodOptions.Where(f => !defaultCategories.Contains(f.Category, StringComparer.OrdinalIgnoreCase)).Take(2))
+                    .Take(8);
+            }
+            else
+            {
+                matches = FoodOptions
                     .Where(f => f.Name.Contains(query, StringComparison.OrdinalIgnoreCase) || f.Category.Contains(query, StringComparison.OrdinalIgnoreCase))
                     .Take(8);
+            }
 
             foreach (var food in matches)
             {

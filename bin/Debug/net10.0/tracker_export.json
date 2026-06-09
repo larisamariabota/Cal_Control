@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-27 22:38:25",
+  "exportedAt": "2026-06-09 12:04:53",
   "databasePath": "C:\\Users\\LARISA\\Desktop\\UniApp\\bin\\Debug\\net10.0\\tracker.db",
   "users": [
     {
@@ -17,6 +17,14 @@
     {
       "id": 4,
       "username": "patri"
+    },
+    {
+      "id": 5,
+      "username": "denisa"
+    },
+    {
+      "id": 6,
+      "username": "elena"
     }
   ],
   "userProfiles": [
@@ -29,6 +37,16 @@
       "activityLevel": "Usor",
       "goal": "Slabire",
       "dailyCalorieGoal": 1630
+    },
+    {
+      "userId": 6,
+      "age": 25,
+      "heightCm": 170,
+      "weightKg": 70,
+      "sex": "F",
+      "activityLevel": "Sedentar",
+      "goal": "Slabire",
+      "dailyCalorieGoal": 1372
     }
   ],
   "loginHistory": [
@@ -56,9 +74,89 @@
       "id": 5,
       "userId": 2,
       "loggedInAt": "2026-05-27 22:38:25"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "loggedInAt": "2026-06-09 11:30:22"
+    },
+    {
+      "id": 7,
+      "userId": 6,
+      "loggedInAt": "2026-06-09 11:49:56"
+    },
+    {
+      "id": 8,
+      "userId": 6,
+      "loggedInAt": "2026-06-09 12:04:10"
     }
   ],
   "foodLogs": [
+    {
+      "id": 15,
+      "userId": 6,
+      "foodName": "Ceap\u0103",
+      "grams": 100,
+      "caloriesPer100g": 40,
+      "calories": 40,
+      "protein": 1.1,
+      "carbs": 9.3,
+      "fat": 0.1,
+      "mealType": "Seara",
+      "date": "2026-06-09"
+    },
+    {
+      "id": 14,
+      "userId": 6,
+      "foodName": "Cartof dulce",
+      "grams": 550,
+      "caloriesPer100g": 86,
+      "calories": 473,
+      "protein": 8.8,
+      "carbs": 110.6,
+      "fat": 0.6,
+      "mealType": "Amiaza",
+      "date": "2026-06-09"
+    },
+    {
+      "id": 13,
+      "userId": 6,
+      "foodName": "Cartof dulce",
+      "grams": 345,
+      "caloriesPer100g": 86,
+      "calories": 297,
+      "protein": 5.5,
+      "carbs": 69.3,
+      "fat": 0.3,
+      "mealType": "Amiaza",
+      "date": "2026-06-09"
+    },
+    {
+      "id": 12,
+      "userId": 6,
+      "foodName": "Morcov",
+      "grams": 300,
+      "caloriesPer100g": 41,
+      "calories": 123,
+      "protein": 2.7,
+      "carbs": 28.8,
+      "fat": 0.6,
+      "mealType": "Dimineata",
+      "date": "2026-06-09"
+    },
+    {
+      "id": 16,
+      "userId": 6,
+      "foodName": "Pulp\u0103 de pui g\u0103tit\u0103",
+      "grams": 230,
+      "caloriesPer100g": 209,
+      "calories": 481,
+      "protein": 59.8,
+      "carbs": 0,
+      "fat": 25.1,
+      "mealType": "Amiaza",
+      "date": "2026-06-08"
+    },
     {
       "id": 8,
       "userId": 2,
@@ -204,6 +302,14 @@
     }
   ],
   "sportLogs": [
+    {
+      "id": 3,
+      "userId": 6,
+      "sportName": "Inot",
+      "minutes": 30,
+      "caloriesBurned": 250,
+      "date": "2026-06-09"
+    },
     {
       "id": 1,
       "userId": 2,

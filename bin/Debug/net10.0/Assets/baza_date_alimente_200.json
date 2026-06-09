@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Bază de date alimente de bază",
-    "count": 200,
+    "count": 210,
     "language": "ro",
     "nutrition_basis": "per 100g",
     "note": "Valorile sunt orientative, potrivite pentru aplicații de tracking nutrițional. Pentru uz medical sau etichetare comercială, verifică surse oficiale/laborator."
@@ -3554,6 +3554,170 @@
         "fiber_g": 0,
         "sugars_g": 1,
         "sodium_mg": 600
+      },
+      "tags": []
+    },
+    {
+      "id": 201,
+      "name": "Pâine cu semințe",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 270,
+        "protein_g": 10,
+        "carbohydrates_g": 52,
+        "fat_g": 3.5,
+        "fiber_g": 5,
+        "sugars_g": 3,
+        "sodium_mg": 520
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 202,
+      "name": "Chiflă albă",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 297,
+        "protein_g": 8,
+        "carbohydrates_g": 56,
+        "fat_g": 4,
+        "fiber_g": 2,
+        "sugars_g": 3,
+        "sodium_mg": 520
+      },
+      "tags": [
+        "vegetarian"
+      ]
+    },
+    {
+      "id": 203,
+      "name": "Croissant",
+      "category": "dulciuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 406,
+        "protein_g": 8,
+        "carbohydrates_g": 45,
+        "fat_g": 22,
+        "fiber_g": 2.1,
+        "sugars_g": 8,
+        "sodium_mg": 410
+      },
+      "tags": []
+    },
+    {
+      "id": 204,
+      "name": "Biscuiți simpli",
+      "category": "dulciuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 502,
+        "protein_g": 6,
+        "carbohydrates_g": 68,
+        "fat_g": 24,
+        "fiber_g": 2.5,
+        "sugars_g": 24,
+        "sodium_mg": 380
+      },
+      "tags": []
+    },
+    {
+      "id": 205,
+      "name": "Ciocolată cu lapte",
+      "category": "dulciuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 535,
+        "protein_g": 7.6,
+        "carbohydrates_g": 59,
+        "fat_g": 30,
+        "fiber_g": 3.4,
+        "sugars_g": 56,
+        "sodium_mg": 24
+      },
+      "tags": []
+    },
+    {
+      "id": 206,
+      "name": "Înghețată vanilie",
+      "category": "dulciuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 207,
+        "protein_g": 3.5,
+        "carbohydrates_g": 24,
+        "fat_g": 11,
+        "fiber_g": 0.5,
+        "sugars_g": 21,
+        "sodium_mg": 80
+      },
+      "tags": []
+    },
+    {
+      "id": 207,
+      "name": "Prăjitură cu ciocolată",
+      "category": "dulciuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 450,
+        "protein_g": 5.5,
+        "carbohydrates_g": 50,
+        "fat_g": 25,
+        "fiber_g": 2,
+        "sugars_g": 30,
+        "sodium_mg": 250
+      },
+      "tags": []
+    },
+    {
+      "id": 208,
+      "name": "Clătite cu gem",
+      "category": "dulciuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 280,
+        "protein_g": 6.5,
+        "carbohydrates_g": 34,
+        "fat_g": 12,
+        "fiber_g": 1.2,
+        "sugars_g": 10,
+        "sodium_mg": 210
+      },
+      "tags": []
+    },
+    {
+      "id": 209,
+      "name": "Sandviș cu șuncă și brânză",
+      "category": "cereale_si_panificatie",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 290,
+        "protein_g": 15,
+        "carbohydrates_g": 34,
+        "fat_g": 12,
+        "fiber_g": 2,
+        "sugars_g": 3,
+        "sodium_mg": 760
+      },
+      "tags": []
+    },
+    {
+      "id": 210,
+      "name": "Tort de vanilie",
+      "category": "dulciuri",
+      "serving": "100g",
+      "nutrition_per_100g": {
+        "calories_kcal": 350,
+        "protein_g": 4,
+        "carbohydrates_g": 42,
+        "fat_g": 18,
+        "fiber_g": 1.5,
+        "sugars_g": 30,
+        "sodium_mg": 260
       },
       "tags": []
     }
